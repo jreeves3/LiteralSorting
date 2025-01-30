@@ -53,7 +53,7 @@ If you would like to print the same KNF except with literals sorted (no clausal 
 
 An example run,
 ```bash
- > python3 tools/order_and_encode.py -k benchmarks/maxsquare-7-33-UNSAT.knf -e kmtotalizer -v PAMO -c tmp/maxsquare_kmtotalizer_PAMO.cnf -q tmp/maxsquare_kmtotalizer_PAMO.ord
+ > python3 tools/order_and_encode.py -k benchmarks/maxsquare-7-33-unsat.knf -e kmtotalizer -v PAMO -c tmp/maxsquare_kmtotalizer_PAMO.cnf -q tmp/maxsquare_kmtotalizer_PAMO.ord
  ```
 
 
@@ -71,7 +71,7 @@ The script has an 1800 timeout for both preprocessing and solving (note, in the 
 
 An example run,
  ```bash
- > sh scripts/run_preproc_and_solve.sh benchmarks/maxsquare-7-33-UNSAT.knf PAMO kmtotalizer 
+ > sh scripts/run_preproc_and_solve.sh benchmarks/maxsquare-7-33-unsat.knf PAMO kmtotalizer 
  ```
 
 SAT solver used for evaluation (not modified in this work):
